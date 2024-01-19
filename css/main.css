@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+@import "style.css";
+
+.wrap{
+    height: 3000px;
+}
+/* header */
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #ccc;
+    min-width: 480px;
+}
+.header .inner{
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_bar{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 300px;
+    object-fit:contain;
+    text-align: center;
+  }
+
+.nav_bar .gnb{
+    width: 800px;
+    background-color: #aaa;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.nav_bar .gnb > li{
+    width: 160px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.nav_bar .gnb > li:hover{
+    border-bottom:7px #B3DBFF solid;
+    font-weight: 500;
+}
+.nav_bar .gnb > li::after{
+    content: attr();
+}
+.gnb > li > a{
+    display: block;
+    font-size: 1.25rem;
+}
+.nav_bar .gnb2{
+    width: 300px;
+}
+/* 서브메뉴 */
+.submenu{
+    position: absolute;
+    top: 80px;
+    z-index: 999;
+    background-color: #E2E2E2;
+    width: 100%;
+    display: none;
+}
+.submenu > li > a{
+    display: block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 17px;
+}
+
+
+/* gnb2 */
+.gnb2{
+    width: 300px;
+    display: block;
+    position: relative;
+    display: flex;
+    padding-left: 20px;
+    justify-content: flex-end;
+    align-items: center;
+}
+.gnb2 .icon{
+    width: 30px;
+    height: 30px;
+    background-color: #999;
+    margin:0 10px;
+}
+.gnb2 .hambar{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: #999;
+    margin-left: 20px;
+}
+
+/* 비주얼 */
+.sliderWrap{
+    position: relative;
+    height: 804px;
+}
+.sliderWrap > div{
+    display: none;
+}
+.sliderWrap .slider{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.sliderWrap .slider img{
+    vertical-align: top;
+}
+
+/* information */
+#information{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 150px;
+    background-color: #999;
+    padding: 0 50px;
+}
+#information > ul{
+    display: flex;
+justify-content: space-around
+}
+#information > ul li{
+    width: 220px;
+    height: 90px;
+    padding: 5px;
+}
+#information > ul li a{
+    font-size: 17px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
