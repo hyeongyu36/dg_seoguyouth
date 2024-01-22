@@ -10,7 +10,7 @@
 .header{
     width: 100%;
     height: 80px;
-    background-color: #ccc;
+    background-color: #fff;
     min-width: 480px;
 }
 .header .inner{
@@ -38,7 +38,6 @@
 
 .nav_bar .gnb{
     width: 800px;
-    background-color: #aaa;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -98,14 +97,14 @@
 .gnb2 .icon{
     width: 30px;
     height: 30px;
-    background-color: #999;
+
     margin:0 10px;
 }
 .gnb2 .hambar{
     width: 50px;
     height: 50px;
     text-align: center;
-    background-color: #999;
+
     margin-left: 20px;
 }
 
@@ -135,7 +134,7 @@
     background-color: #fff;
     padding: 0 50px;
 }
-#information > ul{
+#information ul{
     display: flex;
 justify-content: space-around;
 position: absolute;
@@ -144,12 +143,12 @@ left: 50%;
 transform: translate(-50%, -50%);
 gap: 150px;
 }
-#information > ul li{
+#information ul li{
     width: 220px;
     height: 90px;
     padding: 5px;
 }
-#information > ul li a{
+#information ul li a{
     font-size: 17px;
     font-weight: 500;
     text-align: center;
@@ -163,7 +162,7 @@ gap: 150px;
 #news{
     width: 100%;
     height: 500px;
-    padding: 105px 78px;
+    padding: 105px 0;
     background-color: #E6F3FF;
     position: relative;
 }
@@ -173,6 +172,7 @@ gap: 150px;
     background-color: #B3DBFF;
     position: relative;
     display: flex;
+    box-shadow: 0px 0 4px 0 rgba(0,0,0,0.25);
 }
 /* 공지사항 */
 .notice{
@@ -261,6 +261,12 @@ color: aqua;
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.snslist li{
+    padding-right: 12px;
+}
+.snslist li:last-child{
+    padding-right: 0;
+}
 
 /* operating */
 .operating{
@@ -303,4 +309,114 @@ color: aqua;
     width: 100%;
     height: 30px;
     font-size: 17px;
+}
+
+/* class */
+#class{
+    width: 100%;
+    height: 700px;
+    background-color: #fff;
+    position: relative;
+    padding: 60px 0;
+}
+#class .classtitle{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.classbtn{
+    position: relative;
+    display: flex;
+    width: 660px;
+    justify-content: space-around;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.classbtn li{
+    width: 200px;
+    height: 40px;
+    padding: 8px 49px;
+    background-color: #D9EDFF;
+    border-radius: 50px;
+    text-align: center;
+}
+.classbtn li a{
+    font-size: 17px;
+}
+.classbtn li:hover{
+    background-color: #B3DBFF;
+    transition: 0.3s;
+    font-weight: bold;
+}
+.classplus{
+    margin-top: 20px;
+    margin-bottom: 17px;
+    /* float: right; */
+    display: flex;
+    font-size: 17px;
+    height: 30px;
+    align-items: center;
+    justify-content: flex-end;
+}
+.classplus svg{
+    margin-right: 15px;
+}
+.classplus p{
+    display: inline;
+    vertical-align: super;
+}
+.classkid{
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.classkidlist {
+    display: flex;
+    justify-content: space-between;
+}
+.classkidlist > li{
+    width: 280px;
+    height: 400px;
+    padding: 25px 20px;
+    gap: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+}
+.classkidlist > li > a > h2{
+    width: 240px;
+    height: 82px;
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: #004380;
+    line-height: 100%;
+}
+.classkidlist > li > a > ul > li{
+    width: 100%;
+    display: flex;
+    margin-bottom: 5px;
+}
+.classleft{
+    width: 75px;
+    height: 100%;
+}
+.classrg{
+    width: calc(100% - 75px);
+    height: 100%
+    ;
+}
+.classkidlist span{
+    width: 100%;
+    height: 90px;
+    border-top: 1px solid #d9d9d9;
+    padding: 10px 0;
+    display: block;
+
 }
