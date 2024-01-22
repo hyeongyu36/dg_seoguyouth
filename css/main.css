@@ -350,6 +350,11 @@ color: aqua;
     transition: 0.3s;
     font-weight: bold;
 }
+.classbtn li.on{
+    background-color: #B3DBFF;
+    transition: 0.3s;
+    font-weight: bold;
+}
 .classplus{
     margin-top: 20px;
     margin-bottom: 17px;
@@ -367,16 +372,17 @@ color: aqua;
     display: inline;
     vertical-align: super;
 }
-.classkid{
-    position: relative;
-    display: block;
-    width: 100%;
+.tab_content{
+    display: none;
 }
-.classkidlist {
+.tab_content.on{
+    display: block;
+}
+.classlist {
     display: flex;
     justify-content: space-between;
 }
-.classkidlist > li{
+.classlist > li{
     width: 280px;
     height: 400px;
     padding: 25px 20px;
@@ -389,7 +395,7 @@ color: aqua;
     justify-content: center;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
 }
-.classkidlist > li > a > h2{
+.classlist > li > a > h2{
     width: 240px;
     height: 82px;
     font-size: 30px;
@@ -398,7 +404,7 @@ color: aqua;
     color: #004380;
     line-height: 100%;
 }
-.classkidlist > li > a > ul > li{
+.classlist > li > a > ul > li{
     width: 100%;
     display: flex;
     margin-bottom: 5px;
@@ -412,7 +418,7 @@ color: aqua;
     height: 100%
     ;
 }
-.classkidlist span{
+.classlist span{
     width: 100%;
     height: 90px;
     border-top: 1px solid #d9d9d9;

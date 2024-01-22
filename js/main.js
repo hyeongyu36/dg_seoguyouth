@@ -9,8 +9,26 @@ $(function(){
 
     },3000)
 
-   
+//    let classbtn = $(".classbtn > li");
+//    let classList = $(".classlist");
+//    classList.hide().eq(0).show();
 
+//    classbtn.click(function(){
+//     const index = $(this).index();
+
+//     $(this).addClass("active").siblings().removeClass("active");
+//     classList.eq(index).show().siblings().hide();
+//    })
+    $('.classbtn > li').on('click', function(){
+        var classBtn = $(this);
+        var idx = classBtn.index();
+        var box = classBtn.closest('#class');
+        box.find('.tab_content').removeClass('on');
+        box.find('.classbtn > li').removeClass('on');
+        classBtn.addClass('on');
+        box.find('.tab_content:eq('+idx+')').addClass('on');
+        return false
+    })
 })
 // $(function(){
 //     let currentIndex = 0;   //현재 이미지
