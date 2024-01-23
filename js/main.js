@@ -1,4 +1,5 @@
 $(function(){
+    // 비주얼 슬라이드
     let currentIndex = 0;
 
     setInterval(function(){
@@ -19,6 +20,7 @@ $(function(){
 //     $(this).addClass("active").siblings().removeClass("active");
 //     classList.eq(index).show().siblings().hide();
 //    })
+// 강좌 탭
     $('.classbtn > li').on('click', function(){
         var classBtn = $(this);
         var idx = classBtn.index();
@@ -29,20 +31,37 @@ $(function(){
         box.find('.tab_content:eq('+idx+')').addClass('on');
         return false
     })
+
+
+    // 갤러리
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 })
-// $(function(){
-//     let currentIndex = 0;   //현재 이미지
-//     $(".sliderWrap").append($(".slider").first().clone(true));  //첫번째 이미지를 복사, 마지막에 추가
 
-//     setInterval(function(){     //3초에 한번씩 실행
-//         currentIndex++;     //현재 이미지를 1씩 증가
-//         $(".sliderWrap").animate({marginLeft: -currentIndex * 100 + "%"}, 600); //이미지 애니메이션
-
-//         if(currentIndex == 3){  //마지막 이미지일때
-//             setTimeout(function(){  
-//                 $(".sliderWrap").animate({marginLeft: 0}, 0);   //애니메이션을 정지
-//                 currentIndex = 0;   //현재이미지 초기화
-//             }, 700);
-//         }
-//     }, 3000);
-// });
+$(document).ready(function() {
+    $(".gnb").mouseover(function(){        
+      $(this).find(".submenu").stop().slideDown();  
+    });
+  
+    $(".gnb").mouseout(function(){
+      $(this).find(".submenu").stop().slideUp();
+    });
+  });
+  // 멀티미디어 리소스 로딩 완료 후 실행
+  window.addEventListener("load", function() {
+    // 토글메뉴 a태그 이벤트 막기
+    $('.navbar_toggleBtn').on("click",function(e){
+      e.preventDefault();
+    });
+    });

@@ -42,6 +42,7 @@
     justify-content: space-around;
     align-items: center;
     height: 100%;
+    background-color: #fff;
 }
 .nav_bar .gnb > li{
     width: 160px;
@@ -58,6 +59,9 @@
 .nav_bar .gnb > li::after{
     content: attr();
 }
+.submenu li:hover{
+    background-color: #B3DBFF;
+}
 .gnb > li > a{
     display: block;
     font-size: 1.25rem;
@@ -73,6 +77,7 @@
     background-color: #E2E2E2;
     width: 100%;
     display: none;
+    height: 400px;
 }
 .submenu > li > a{
     display: block;
@@ -381,6 +386,7 @@ color: aqua;
 .classlist {
     display: flex;
     justify-content: space-between;
+
 }
 .classlist > li{
     width: 280px;
@@ -395,9 +401,11 @@ color: aqua;
     justify-content: center;
     box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
 }
+.classlist > li > a > ul{
+    padding: 10px 0;
+}
 .classlist > li > a > h2{
     width: 240px;
-    height: 82px;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -425,4 +433,124 @@ color: aqua;
     padding: 10px 0;
     display: block;
 
+}
+/* 갤러리 */
+#gallery{
+    width: 100%;
+    height: 526px;
+    padding: 60px 0;
+}
+.gallerytitle{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.swiper{
+    width: 100%;
+    height: 340px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-wrapper{
+    /* display: flex; */
+}
+.swiper-slide{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.swiper-slide img{
+    display: block;
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+}
+.swiper-button-prev,
+.swiper-button-next{
+    top: var(--swiper-navigation-top-offset,45%)!important;
+}
+/* 청소년활동 영역 */
+#active{
+    width: 100%;
+    height: 650px;
+    background-color: #fff;
+    padding: 60px 0;
+}
+.activetitle{
+    font-size: 30px;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.activewrap{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.activelf{
+    display: flex;
+    gap: 50px;
+}
+.activerg{
+    display: flex;
+    gap: 50px;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.activelist{
+    width: 200px;
+    height: 200px;
+}
+/* 사이트 영역 */
+#site{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+}
+.linkimgs{
+    display: flex;
+    gap: 35px;
+    height: 100%;
+    align-items: center;
+}
+.linkimg{
+    width: 190px;
+    height: 60px;
+    background-color: #fff;
+}
+.linkimg img{
+    object-fit:cover;
+    width: 100%;
+    height: 100%;
+}
+/* 푸터 */
+footer{
+    width: 100%;
+    height: 220px;
+    padding: 17px 0 42px 0;
+}
+.footerlf{
+    float: left;;
+}
+.footerlf a{
+    display: block;
+}
+.footerlf span{
+    color: #666;
+}
+.footerrg{
+    float: right;
+}
+.footerrg ul{
+    display: flex;
+}
+.footerrg ul li{
+    padding:  0 20px;
+    border-right: 1px solid #666;
+    font-size: 17px;
+    font-weight: 500;
 }

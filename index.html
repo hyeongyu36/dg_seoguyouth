@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
     <title>대구서구청소년수련관</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js/main.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+    <!-- Demo styles -->
 </head>
 <body>
     <div class="wrap">
@@ -24,56 +30,49 @@
                         <li>
                             <a href="#" alt="수련관 소개">수련관 소개</a>
                             <ul class="submenu">
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
+                                <li><a href="#">인사말</a></li>
+                                <li><a href="#">연혁</a></li>
+                                <li><a href="#">조직 및 직원안내</a></li>
+                                <li><a href="#">시설안내</a></li>
+                                <li><a href="#">오시는 길</a></li>
+                                <li><a href="#">대관안내</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" alt="청소년활동">청소년활동</a>
                             <ul class="submenu">
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
+                                <li><a href="#">청소년참여위원회</a></li>
+                                <li><a href="#">청소년운영위원회</a></li>
+                                <li><a href="#">청소년동아리</a></li>
+                                <li><a href="#">청소년 어울림마당</a></li>
+                                <li><a href="#">국제청소년성취포상제</a></li>
+                                <li><a href="#">청소년방과후아카데미</a></li>
+                                <li><a href="#">봉사활동</a></li>
+                                <li><a href="#">학교 연계 활동</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" alt="문화교육">문화교육</a>
                             <ul class="submenu">
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">정기강좌</a></li>
+                                <li><a href="#">특별강좌</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" alt="생활체육">생활체육</a>
                             <ul class="submenu">
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">수영/아쿠아로빅</a></li>
+                                <li><a href="#">체력단련실</a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="#" alt="커뮤니티">커뮤니티</a>
                             <ul class="submenu">
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
-                                <li><a href="#">submenu</a></li>
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">포토갤러리</a></li>
+                                <li><a href="#">관련사이트안내</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -108,6 +107,7 @@
                 </div>
             </div>
         </main>
+        <!-- 안내영역 -->
         <section id="information">
             <div class="inner">
 
@@ -151,6 +151,7 @@
                 </ul>
             </div>
         </section>
+        <!-- 뉴스 -->
         <section id="news">
             <div class="inner">
 
@@ -274,6 +275,7 @@
                 </div>
             </div>
         </section>
+        <!-- 강좌영역 -->
         <section id="class">
             <div class="inner">
 
@@ -636,6 +638,80 @@
                 </div>
             </div>
         </section>
+        <!-- 갤러리영역 -->
+        <section id="gallery">
+            <div class="inner">
+                <h2 class="gallerytitle">수련관 갤러리</h2>
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="images/gallery01.png" alt="갤러리1"></div>
+                      <div class="swiper-slide"><img src="images/gallery02.png" alt="갤러리2"></div>
+                      <div class="swiper-slide"><img src="images/gallery03.png" alt="갤러리3"></div>
+                      <div class="swiper-slide"><img src="images/gallery04.png" alt="갤러리4"></div>
+                      <div class="swiper-slide"><img src="images/gallery05.png" alt="갤러리5"></div>
+                      <div class="swiper-slide"><img src="images/gallery06.png" alt="갤러리6"></div>
+                      <div class="swiper-slide"><img src="images/gallery07.png" alt="갤러리7"></div>
+                      <div class="swiper-slide"><img src="images/gallery08.png" alt="갤러리8"></div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                  </div>
+            </div>
+        </section>
+        <!-- 청소년활동-->
+        <section id="active">
+            <div class="inner">
+                <h2 class="activetitle">청소년 활동</h2>
+                <div class="activewrap">
+                    <div class="activelf">
+                        <div class="activelist"><img src="images/active.png" alt="활동1"></div>
+                        <div class="activelist"><img src="images/active-1.png" alt="활동2"></div>
+                        <div class="activelist"><img src="images/active-2.png" alt="활동3"></div>
+                        <div class="activelist"><img src="images/active-3.png" alt="활동4"></div>
+                    </div>
+                    <div class="activerg">
+                        <div class="activelist"><img src="images/active-4.png" alt="활동5"></div>
+                        <div class="activelist"><img src="images/active-5.png" alt="활동6"></div>
+                        <div class="activelist"><img src="images/active-6.png" alt="활동7"></div>
+                        <div class="activelist"><img src="images/active-7.png" alt="활동8"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 사이트 -->
+        <section id="site">
+            <div class="inner">
+                <div class="linkimgs">
+
+                    <div class="linkimg"><img src="images/site1.jpg" alt="대구광역시"></div>
+                    <div class="linkimg"><img src="images/site2.png" alt="대구광역시서구"></div>
+                    <div class="linkimg"><img src="images/site3.jpg" alt="보건복지가족부"></div>
+                    <div class="linkimg"><img src="images/site4.png" alt="청소년사이버상담센터"></div>
+                    <div class="linkimg"><img src="images/site5.png" alt="총소년종합정보서비스"></div>
+                    <div class="linkimg"><img src="images/site6.jpg" alt="대구청소년지원재단"></div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footerlf">
+                <a href="#" alt="대구서구청소년수련관" class="footerlogo">
+                    <img src="images/logo2.png" alt="대구서구청소년수련관">
+                </a>
+                <span>주소 : 대구광역시 서구 문화로 112 (41759)</span><br>
+                <span>TEL : 053 - 572 - 2451</span>&nbsp;
+                <span>FAX : 053 - 572 - 2458</span><br>
+                <span>Copyright ⓒ 2006-2009 서구청소년수련관, All rights reserved.</span>
+            </div>
+            <div class="footerrg">
+                <ul>
+                    <li>수련관소개</li>
+                    <li>개인정보 취급방침</li>
+                    <li>이용약관</li>
+                    <li>오시는길</li>
+                </ul>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
