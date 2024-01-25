@@ -96,20 +96,19 @@
         <div id="container">
             <!-- subwrap -->
             <section id="subwrap">
-                <h2><span>커뮤니티</span></h2>
+                <h2><span>문화교육</span></h2>
                 <nav class="left">
                     <ul class="snb">
-                        <li class="selected">공지사항</li>
-                        <li>포토갤러리</li>
-                        <li>Q&A</li>
-                        <li>관련사이트안내</li>
+                        <li>이용안내</li>
+                        <li class="selected">정기강좌</li>
+                        <li>특별강좌</li>
                     </ul>
                 </nav>
             </section>
             <!-- content -->
             <section id="content">
                 <div class="title">
-                    <h2>공지사항</h2>
+                    <h2>정기강좌</h2>
                     <ul>
                         <li><a href="index.html">홈</a></li>
                         <li>
@@ -118,13 +117,250 @@
                             </svg>
                         </li>
                             
-                        <li><a href="#">커뮤니티</a></li>
+                        <li><a href="#">문화교육</a></li>
                         <li>
                             <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1.77821 0.888916L6.22266 4.13529L1.77821 7.11114" stroke="black" stroke-linecap="round" stroke-linejoin="round"/>
                             </svg>
                         </li>
-                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">정기강좌</a></li>
+                    </ul>
+                </div>
+                <form class="searchbox">
+                    <h2>원하시는 수강 센터의 종목과 분류를 선택하세요.</h2>
+                    <label>
+                        분류 : <select name="searchselect">
+                            <option value="1" selected>정기강좌</option>
+                            <option value="2">방학강좌</option>
+                            <option value="3">일일강좌</option>
+                            <option value="4">놀토강좌</option>
+                            <option value="5">체험학습</option>
+                            <option value="6">단기강좌</option>
+                        </select>
+                    </label>
+                    <label>
+                        대상 : <select name="searchselect">
+                            <option value="1" selected>전체</option>
+                            <option value="2">유아</option>
+                            <option value="3">청소년</option>
+                            <option value="4">성인</option>
+                        </select>
+                    </label>
+                    <label>
+                        분야 : <select name="searchselect">
+                            <option value="1" selected>전체</option>
+                            <option value="2">미술</option>
+                            <option value="3">음악</option>
+                            <option value="4">체육</option>
+                            <option value="5">학습</option>
+                            <option value="6">과학</option>
+                            <option value="7">공예</option>
+                            <option value="8">요가</option>
+                            <option value="9">댄스</option>
+                            <option value="10">취미</option>
+                            <option value="11">요리</option>
+                            <option value="12">체험</option>
+                        </select>
+                    </label>
+                    <label>
+                        요일 : <select name="searchselect">
+                            <option value="1" selected>전체</option>
+                            <option value="2">월</option>
+                            <option value="3">화</option>
+                            <option value="4">수</option>
+                            <option value="5">목</option>
+                            <option value="6">금</option>
+                            <option value="7">토</option>
+                            <option value="8">일</option>
+                        </select>
+                    </label><br>
+                    <label>
+
+                        <input type="search" name="search" placeholder="검색할 강좌명을 입력하세요.">
+                        <button type="button" class="search">검색</button>
+                    </label>
+                </form>
+                <!-- 강좌리스트 -->
+                <div class="subcontent">
+                    <ul>
+                            <li class="classlist" >
+                                <a href="lecture.html">
+                                    <img src="images/Recruitment_on.png" alt="모집중">
+                                    <h2>[정기] 마음으로 그리는 미술</h2>
+                                    <ul>
+                                        <li>
+                                            <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                            <div class="classrg">5세 ~ 7세</div>
+                                        </li>
+                                        <li>
+                                            <div class="classleft">강좌기간</div>
+                                            <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                        </li>
+                                        <li>
+                                            <div class="classleft">요&nbsp;&nbsp;일</div>
+                                            <div class="classrg">토</div>
+                                        </li>
+                                        <li>
+                                            <div class="classleft">주요내용</div>
+                                            <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                        </li>
+                                    </ul>
+                                </a>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="classlist">
+                                <img src="images/Recruitment_off.png" alt="모집마감">
+                                <h2>[정기] 마음으로 그리는 미술</h2>
+                                <ul>
+                                    <li>
+                                        <div class="classleft">대&nbsp;&nbsp;&nbsp;상</div>
+                                        <div class="classrg">5세 ~ 7세</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">강좌기간</div>
+                                        <div class="classrg">2023.12.04 - 2024.02.24</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">요&nbsp;&nbsp;일</div>
+                                        <div class="classrg">토</div>
+                                    </li>
+                                    <li>
+                                        <div class="classleft">주요내용</div>
+                                        <div class="classrg">미술을 통해 재미와 흥미를 일깨워 줄 유아미술강좌</div>
+                                    </li>
+                                </ul>
+                            </li>
                     </ul>
                 </div>
                 <!-- 페이지네이션 -->
@@ -181,6 +417,6 @@
             </div>
         </footer>
     </div>
-    
+
 </body>
 </html>

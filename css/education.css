@@ -1,3 +1,106 @@
 @charset "utf-8";
 @import "reset.css";
 @import "common.css";
+.searchbox{
+    position: relative;
+    width: 100%;
+    height: 192px;
+    background-color: #EEEEEE;
+    padding: 23px 0;
+    text-align: center;
+}
+.searchbox h2{
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.searchbox label{
+    width: 196px;
+    display: inline-block;
+    text-align: right;
+}
+.searchbox select{
+    width: 140px;
+    height: 44px;
+    padding: 8px 10px 8px 16px;
+    margin-left: 8px;
+    font-size: 16px;
+    border: 1px solid #9CA3AF;
+    border-radius: 5px;
+}
+.searchbox label:last-child{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+.searchbox input{
+    width: 300px;
+    height: 44px;
+    padding: 8px 10px 8px 16px;
+    font-size: 16px;
+    border: 1px solid #9CA3AF;
+    border-radius: 5px;
+}
+.searchbox button{
+    width: 108px;
+    height: 44px;
+    padding: 8px 0;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    background-color: #116ACC;
+    border: 1px solid #9CA3AF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.searchbox button:hover{
+    background-color: #004C9F;
+}
+
+/* 강좌리스트 */
+.subcontent{
+    width: 100%;
+    display: block;
+    position: relative;
+    padding-top: 23px;
+}
+.subcontent > ul{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+.subcontent .classlist{
+    padding: 20px 25px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    width: 48%;
+    height: 213px;
+}
+.subcontent .classlist:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    border: 3px solid #B3DBFF;
+}
+.subcontent .classlist img{
+    width: 130px;
+    height: 30px;
+    object-fit: cover;
+}
+.classlist h2{
+    margin: 10px 0 15px 0;
+    font-size: 17px;
+    font-weight: 700;
+}
+.classlist ul li{
+    display: flex;
+}
+.classlist .classleft{
+    width: 70px;
+    height: 20px;
+    padding-right: 5px;
+}
+.classlist .classrg{
+    width: calc(100% - 70px);
+    height: 100%;
+    padding-left: 12px;
+}
