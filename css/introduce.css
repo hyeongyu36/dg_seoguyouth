@@ -1,0 +1,24 @@
+@charset "utf-8";
+@import "reset.css";
+@import "common.css";
+.subcontent{
+    width: 100%;
+}
+.subcontent .text{
+    width: 100%;
+    height: 100%;
+    padding: 40px 70px;
+}
+.subcontent .text h2{
+    font-size: 20px;
+    color: #004C9F;
+    font-weight: 700;
+}
+.subcontent .text b{
+    font-weight: 700;
+    background-color: #B3DBFF;
+    height: 10px;
+    width: auto;
+    display: inline-block;
+    line-height: 7px;
+}
