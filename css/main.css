@@ -138,11 +138,12 @@ height: calc(100% - 80px);
     height: 30px;
     font-size: 17px;
 }
-.noticeList li a hover{
-color: aqua;
-}
+
 .noticeList li .norg a {
     color: #666666;
+}
+.noticeList li .nolf a:hover{
+    text-decoration: underline;
 }
 /* sns */
 .sns{
@@ -173,6 +174,12 @@ color: aqua;
 .snsleft svg{
     width: 40px;
     height: 40px;
+}
+.snslist svg:hover path{
+    fill: #3b5998;
+}
+.snslist svg:hover path:nth-child(2){
+    fill: radial-gradient(circle farthest-corner at 32% 106%,#ffe17d 0%,#ffcd69 10%,#fa9137 28%,#eb4141 42%,transparent 82%) , linear-gradient(135deg,#234bd7 12%,#c33cbe 58%);
 }
 .snslist{
     display: flex;
