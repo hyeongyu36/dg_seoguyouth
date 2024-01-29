@@ -47,6 +47,8 @@ gap: 150px;
     width: 220px;
     height: 90px;
     padding: 5px;
+    position: relative;
+    display: block;
 }
 #information ul li a{
     font-size: 17px;
@@ -55,6 +57,24 @@ gap: 150px;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    
+}
+#information ul li a p{
+    min-width: 105px;
+}
+#information ul li a svg{
+    z-index: 9999;
+
+}
+#information ul > li > a > span{
+    background-color: #B3DBFF;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top:10px;
+    left: 18px;
+    /* display: none; */
 }
 
 

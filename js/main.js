@@ -32,7 +32,14 @@ $(function(){
         return false
     })
 
-
+    $("#information ul li").mouseover(function(){
+      var element = $(this).find("a > span");
+  element.css("display", "block");
+    })
+    $("#information ul li").mouseout(function(){
+      var element = $(this).find("a > span");
+      element.css("display", "none");
+    })
     // 갤러리
     var swiper = new Swiper(".mySwiper", {
         slidesPerView: 4,
