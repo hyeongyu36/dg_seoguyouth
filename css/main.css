@@ -2,9 +2,9 @@
 @import "reset.css";
 @import "common.css";
 @import "style.css";
-
+@import "header.css";
 .wrap{
-    height: 3000px;
+    /* height: 3000px; */
 }
 
 
