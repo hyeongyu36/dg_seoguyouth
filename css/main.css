@@ -273,10 +273,14 @@ height: calc(100% - 80px);
     }
     .sns .snsTitle .snsleft{
         font-size: 17px;
+        white-space: nowrap;
     }
     .snslist{
-        flex-wrap: wrap;
-        justify-content: center
+        /* flex-wrap: wrap; */
+        justify-content: center;
+    }
+    .snslist li{
+        padding-right: 5px;
     }
     .sns .snslist svg{
         width: 25px;
