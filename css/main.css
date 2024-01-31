@@ -3,12 +3,13 @@
 @import "common.css";
 @import "style.css";
 @import "header.css";
-.wrap{
-    /* height: 3000px; */
-}
 
 
 /* 비주얼 */
+#slider{
+    width: 100%;
+    height: auto;
+}
 .sliderWrap{
     position: relative;
     height: 804px;
@@ -25,6 +26,13 @@
     vertical-align: top;
 }
 
+@media all and (max-width:768px){
+
+    .sliderWrap{
+        height: 385px;
+    }
+}
+
 /* information */
 #information{
     position: relative;
@@ -32,7 +40,10 @@
     width: 100%;
     height: 150px;
     background-color: #fff;
-    padding: 0 50px;
+    /* padding: 0 50px; */
+}
+#information .inner{
+    padding: 0;
 }
 #information ul{
     display: flex;
@@ -41,10 +52,11 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
-gap: 150px;
+width: 100%;
+/* gap: 150px; */
 }
 #information ul li{
-    width: 220px;
+    /* width: calc(100%/4); */
     height: 90px;
     padding: 5px;
     position: relative;
@@ -74,25 +86,57 @@ gap: 150px;
     position: absolute;
     top:10px;
     left: 18px;
-    /* display: none; */
+    display: none;
 }
-
+@media all and (max-width:768px){
+    #information{
+        height: 42px;
+    }
+    #information svg{
+        width: 32px;
+        height: 32px;
+    }
+    #information ul li{
+        height: 42px;
+    }
+    #information ul li a{
+        font-size: 15px;
+    }
+    #information ul > li > a > span{
+        width: 30px;
+        height: 30px;
+        top: 31px;
+    left: 11px;
+    }
+}
 
 /* news */
 #news{
     width: 100%;
     height: 500px;
-    padding: 105px 0;
+    padding: 105px 80px;
     background-color: #E6F3FF;
     position: relative;
 }
+#news .inner{
+    padding: 0;
+}
 .newsWrap{
-    width: 1244px;
+    width: 100%;
     height: 291px;
     background-color: #B3DBFF;
     position: relative;
     display: flex;
     box-shadow: 0px 0 4px 0 rgba(0,0,0,0.25);
+}
+@media all and (max-width:768px){
+    #news{
+        height: 245px;
+        padding: 22px 37px;
+    }
+    .newsWrap{
+        height: 200px;
+    }
 }
 /* 공지사항 */
 .notice{
@@ -145,6 +189,28 @@ height: calc(100% - 80px);
 .noticeList li .nolf a:hover{
     text-decoration: underline;
 }
+@media all and (max-width:768px){
+    .line{
+        margin: 8px 0;
+    }
+    .notice{
+        padding: 15px;
+    }
+    .notice .noticeTitle{
+        height: auto;
+    }
+    .notice .noticeTitle svg{
+        width: 20px;
+        height: 20px;
+    }
+    .notice .noticeTitle .noticeleft{
+        font-size: 17px;
+    }
+    .noticeList li{
+        font-size: 13px;
+        height: auto;
+    }
+}
 /* sns */
 .sns{
     width: calc(25%);
@@ -194,7 +260,30 @@ height: calc(100% - 80px);
 .snslist li:last-child{
     padding-right: 0;
 }
-
+@media all and (max-width:768px){
+    .sns{
+        padding: 15px;
+    }
+    .sns .snsTitle{
+        height: auto;
+    }
+    .sns .snsTitle svg{
+        width: 20px;
+        height: 20px;
+    }
+    .sns .snsTitle .snsleft{
+        font-size: 17px;
+    }
+    .snslist{
+        flex-wrap: wrap;
+        justify-content: center
+    }
+    .sns .snslist svg{
+        width: 25px;
+        height: 25px;
+        
+    }
+}
 /* operating */
 .operating{
     width: calc(25%);
@@ -237,7 +326,34 @@ height: calc(100% - 80px);
     height: 30px;
     font-size: 17px;
 }
-
+@media all and (max-width:768px){
+    .operating{
+        padding: 15px;
+    }
+    .operating .operTitle{
+        height: auto;
+    }
+    .operating .operTitle svg{
+        width: 20px;
+        height: 20px;
+    }
+    .operating .operTitle {
+        font-size: 17px;
+    }
+    .operlist li{
+        font-size: 13px;
+        height: auto;
+        align-items: flex-start;
+        line-height: normal;
+    }
+    .operleft{
+        width: 40%;
+    }
+    .operrg{
+        width: 60%;
+        padding-left: 5px;
+    }
+}
 /* class */
 #class{
     width: 100%;
@@ -311,7 +427,9 @@ height: calc(100% - 80px);
 
 }
 .classlist > li{
-    width: 280px;
+    max-width: 280px;
+    width: 100%;
+    /* width: 280px; */
     height: 400px;
     padding: 25px 20px;
     gap: 10px;
@@ -327,7 +445,8 @@ height: calc(100% - 80px);
     padding: 10px 0;
 }
 .classlist > li > a > h2{
-    width: 240px;
+    width: 100%;
+    max-width: 240px;
     font-size: 30px;
     font-weight: 500;
     text-align: center;
@@ -356,6 +475,70 @@ height: calc(100% - 80px);
     display: block;
 
 }
+@media all and (max-width:768px){
+    #class{
+        padding: 35px 0;
+    }
+    #class .inner{
+        padding: 0;
+    }
+    #class .classtitle{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .classbtn{
+        width: 70%;
+    }
+    .classbtn li{
+        width: 126px;
+        height: 20px;
+        padding: 3px 15px;
+        line-height: 20px;
+    }
+    .classbtn li a{
+        font-size: 15px;
+    }
+    .classplus{
+        margin: 9px 0;
+        font-size: 13px;
+        height: auto;
+    }
+    .classplus svg{
+        width: 20px;
+        height: 20px;
+    }
+    .classlist{
+        /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+    gap: 10px;
+    }
+    .classlist > li {
+        padding: 15px 10px;
+        justify-content: flex-start;
+        height: auto;
+    }
+    .classlist > li > a > ul{
+        padding: 5px 0;
+    }
+    .classlist > li > a > ul > li{
+        margin: 0;
+        justify-content: space-between
+    }
+    .classlist > li > a > h2{
+        font-size: 17px;
+        height: 40px;
+    }
+    .classleft{
+        width: 30%;
+    }
+    .classrg{
+        width: 70%;
+    }
+    .classlist span{
+        padding: 5px 0;
+    }
+}
 /* 갤러리 */
 #gallery{
     width: 100%;
@@ -374,9 +557,6 @@ height: calc(100% - 80px);
     height: 340px;
     margin-left: auto;
     margin-right: auto;
-}
-.swiper-wrapper{
-    /* display: flex; */
 }
 .swiper-slide{
 display: flex;
