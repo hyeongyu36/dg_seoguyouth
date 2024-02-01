@@ -276,7 +276,8 @@ height: calc(100% - 80px);
     }
     .snslist{
         /* flex-wrap: wrap; */
-        justify-content: center
+        justify-content: center;
+        gap: 0;
     }
     .snslist li{
         padding-right: 5px;
@@ -481,7 +482,7 @@ height: calc(100% - 80px);
     display: -webkit-box;
     word-wrap: break-word;
     -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
+    /* -webkit-box-orient: vertical; */
     text-overflow: ellipsis;
     overflow: hidden;
     height: 100px;
@@ -495,7 +496,7 @@ height: calc(100% - 80px);
         height: auto;
     }
     #class .inner{
-        padding: 0;
+        padding: 0 20px;
     }
     #class .classtitle{
         margin-bottom: 15px;
@@ -508,7 +509,7 @@ height: calc(100% - 80px);
         width: 126px;
         height: 20px;
         padding: 3px 15px;
-        line-height: 20px;
+        line-height: 12px;
     }
     .classbtn li a{
         font-size: 15px;
@@ -526,6 +527,7 @@ height: calc(100% - 80px);
         /* display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap; */
+    min-height: 324px;
     gap: 10px;
     }
     .classlist > li {
@@ -594,16 +596,17 @@ align-items: center;
     top: var(--swiper-navigation-top-offset,45%)!important;
     
 }
-/* .swiper-pagination{
-    bottom: 0;
-} */
+.swiper-pagination{
+    bottom: var(--swiper-pagination-bottom) !important;
+    margin-top: 10px;
+}
 @media all and (max-width:768px){
     #gallery{
         height: 280px;
         padding: 35px 0;
     }
     #gallery .inner{
-        padding: 0 40px;
+        padding: 0 20px;
     }
     .gallerytitle{
         font-size: 20px;
@@ -645,6 +648,29 @@ align-items: center;
     width: 200px;
     height: 200px;
 }
+@media all and (max-width:768px){
+    #active{
+        height: auto;
+        padding: 35px 0;
+    }
+    #active .inner{
+        padding: 0 20px;
+    }
+    .activetitle{
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+    .activerg, .activelf{
+        gap:24px;
+    }
+    .activerg{
+        margin-top: 15px;
+    }
+    .activelist{
+        width:100px;
+        height: 100px;
+    }
+}
 /* 사이트 영역 */
 #site{
     width: 100%;
@@ -666,4 +692,21 @@ align-items: center;
     object-fit:cover;
     width: 100%;
     height: 100%;
+}
+@media all and (max-width:768px){
+    #site{
+        height: auto;
+        padding: 20px 0;
+    }
+    #site .inner{
+        padding: 0 20px;
+    }
+    .linkimgs{
+        gap: 15px;
+    }
+    .linkimg{
+        width: calc(100%/6);
+        height: 28px;
+    }
+
 }

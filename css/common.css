@@ -72,14 +72,19 @@
   }
 
 /* 푸터 */
-footer{
+.footer{
   width: 100%;
-  height: 220px;
-  padding: 17px 0 42px 0;
-  margin-top: 30px;
+  height: auto;
+
+}
+.footer .inner{
+  padding: 17px 40px 40px 40px;
+  display: flex;
+  justify-content: space-between
 }
 .footerlf{
-  float: left;;
+  /* float: left; */
+  white-space: nowrap;
 }
 .footerlf a{
   display: block;
@@ -88,19 +93,39 @@ footer{
   color: #666;
 }
 .footerrg{
-  float: right;
+  /* float: right; */
+  position: relative;
+
 }
 .footerrg ul{
   display: flex;
 }
 .footerrg ul li{
-  padding:  0 20px;
+  padding:  0 10px;
   border-right: 1px solid #666;
-  font-size: 17px;
   font-weight: 500;
+  white-space: nowrap;
 }
 .footerrg ul li:last-child{
   border: none;
+}
+@media all and (max-width:768px){
+.footer .inner{
+  padding: 20px;
+}
+  .footer img{
+    width: 120px;
+    height: 26px;
+    object-fit: cover;
+  }
+  .footerlf{
+    font-size: 12px;
+  }
+  .footerrg ul li{
+    font-size: 10px;
+    padding: 0 6px;
+
+  }
 }
 
 /* 서브페이지 */
