@@ -85,7 +85,7 @@ width: 100%;
     border-radius: 50%;
     position: absolute;
     top:10px;
-    left: 18px;
+    left: 10px;
     display: none;
 }
 @media all and (max-width:768px){
@@ -105,8 +105,8 @@ width: 100%;
     #information ul > li > a > span{
         width: 30px;
         height: 30px;
-        top: 31px;
-    left: 11px;
+        top: 6px;
+        left: 6px;
     }
 }
 
